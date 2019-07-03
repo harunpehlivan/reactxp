@@ -7,7 +7,9 @@
     "web-watch": "webpack --progress --colors --watch",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
-    "ios": "node node_modules/react-native/local-cli/cli.js run-ios"
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-loader": "^7.0.0",
@@ -22,6 +24,8 @@
     "react-native-windows": "^0.33.0",
     "reactxp": "0.42.0-rc.9",
     "reactxp-imagesvg": "^0.2.4",
-    "reactxp-video": "^0.1.6"
-  }
+    "reactxp-video": "^0.1.6",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
