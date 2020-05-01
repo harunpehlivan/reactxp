@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "build": "npm run tslint && tsc",
-    "tslint": "tslint --project tsconfig.json -r tslint.json -r ./node_modules/tslint-microsoft-contrib --fix || true"
+    "tslint": "tslint --project tsconfig.json -r tslint.json -r ./node_modules/tslint-microsoft-contrib --fix || true",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@types/lodash": "^4.14.66",
@@ -16,7 +18,8 @@
     "prop-types": "^15.5.9",
     "rebound": "^0.0.13",
     "subscribableevent": "^1.0.0",
-    "synctasks": "^0.2.9"
+    "synctasks": "^0.2.9",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "react": "^15.4.1",
@@ -37,5 +40,6 @@
   "bugs": {
     "url": "https://github.com/microsoft/reactxp/issues"
   },
-  "types": "dist/ReactXP.d.ts"
+  "types": "dist/ReactXP.d.ts",
+  "snyk": true
 }
