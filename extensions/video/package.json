@@ -6,13 +6,16 @@
   "license": "MIT",
   "scripts": {
     "build": "npm run tslint && tsc",
-    "tslint": "tslint --project tsconfig.json -r tslint.json -r ./node_modules/tslint-microsoft-contrib --fix || true"
+    "tslint": "tslint --project tsconfig.json -r tslint.json -r ./node_modules/tslint-microsoft-contrib --fix || true",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@types/lodash": "^4.14.62",
     "lodash": "^4.0.0",
     "reactxp": "0.42.0-rc.20",
-    "react-native-video": "^1.0.0"
+    "react-native-video": "^2.0.0",
+    "snyk": "^1.348.1"
   },
   "peerDependencies": {
     "react-dom": "^15.4.1",
@@ -23,5 +26,6 @@
     "tslint": "^5.0.0",
     "tslint-microsoft-contrib": "^4.0.1"
   },
-  "types": "dist/web/PluginBase.d.ts"
+  "types": "dist/web/PluginBase.d.ts",
+  "snyk": true
 }
