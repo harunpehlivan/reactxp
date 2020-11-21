@@ -1,0 +1,19 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - reactxp-video > react-native-video > react-native-windows > yeoman-generator > lodash:
+        patched: '2020-11-21T03:35:30.729Z'
+    - reactxp-video > react-native-video > react-native-windows > yeoman-generator > inquirer > lodash:
+        patched: '2020-11-21T03:35:30.729Z'
+    - reactxp-video > react-native-video > react-native-windows > yeoman-generator > yeoman-environment > lodash:
+        patched: '2020-11-21T03:35:30.729Z'
+    - reactxp-video > react-native-video > react-native-windows > yeoman-generator > html-wiring > cheerio > lodash:
+        patched: '2020-11-21T03:35:30.729Z'
+    - reactxp-video > react-native-video > react-native-windows > yeoman-generator > yeoman-environment > inquirer > lodash:
+        patched: '2020-11-21T03:35:30.729Z'
+  'npm:tunnel-agent:20170305':
+    - reactxp-video > react-native-video > react-native-windows > yeoman-generator > download > caw > tunnel-agent:
+        patched: '2020-11-21T03:35:30.729Z'
